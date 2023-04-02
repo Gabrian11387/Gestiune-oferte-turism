@@ -15,4 +15,4 @@ Această aplicație permite gestiunea ofertelor de la o agentie de turism. Fieca
  Aplicația este structurată pe 3 nivele: ui(main), service(business) și repository(storage), fiecare nivel apelând funcții din celălalt nivel inferior. În plus, fiecare fișier C are asociat un header pentru a se putea realiza legătura între fișiere, întrucât aplicația șă funcționeze ca un tot unitar. 
 
  Aplicația rulează în consolă unde se prezintă un meniu și opțiunile aferente fiecărei funcționalități. Se primesc date de la utilizator, care mai apoi sunt trecute printr-un validator, iar dacă nu reușesc să treacă de acesta, utilizatorul va primi un mesaj de informare. Odată trecute de validator, datele ajung în service, iar mai apoi în repo, de unde vor fi stocate în lista finală de oferte care există pe tot parcursul rulării aplicație și este ștearsă odată cu oprirea rulării acesteia(memorie volatilă datorată faptului că datele cu care lucrăm nu se salvează în fișiere).
- În plus, fiecare funcție cu excepția celor din ui este testată(100% coverage). 
+ În plus, fiecare funcție cu excepția celor din ui este testată(100% coverage) înainte de rularea aplicației. 
